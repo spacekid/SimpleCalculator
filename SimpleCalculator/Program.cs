@@ -6,6 +6,9 @@ namespace SimpleCalculator
 {
     class Program
     {
+        [Import(typeof(ICalculator))]
+        public ICalculator calculator;
+
         private static CompositionContainer _container;
 
         static void Main(string[] args)
